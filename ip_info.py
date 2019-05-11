@@ -40,7 +40,7 @@ def main():
 			print("\t Witcard address: %s"%str(network.hostmask))
 			print("\t Broadcast address : %s"%str(network.broadcast_address))
 			print("\t \t Bitmask MAX : %s"%str(network.max_prefixlen))
-			print("\t \t IP Is Global: %sKeyboardInterrupt"%str(network.is_global))
+			print("\t \t IP Is Global: %s"%str(network.is_global))
 			print("\t \t IP Is Private: %s"%str(network.is_private))
 			  
 				
