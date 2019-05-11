@@ -24,7 +24,7 @@ def main():
 	try:
 		while True:
 			IP_ADDR = str(input(R+"Enter Your IP Address::"))
-			bitmask = input(B+"Enter the Bitmask (24-30): ")
+			bitmask = input(B+"Enter the Bitmask (8-24-30): ")
 			bitmask = int(bitmask)
 			net_addr = IP_ADDR + '/' +str(bitmask)
 			print(GR+"network address : %s"%net_addr)
