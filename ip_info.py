@@ -26,8 +26,13 @@ print ("""
 def main():
 	try:
 		while True:
+
 			IP_ADDR = str(input(R+'Enter Your IP Address::'))
-			IP_ADDR=re.match("\w+\S\w+\S\w+\S+[*.]",IP_ADDR).group()+"0"
+			try:
+				IP_ADDR=re.match("\w+\S\w+\S\w+\S",IP_ADDR).group()+"0"
+			except:
+				pass
+			print(IP_ADDR)
 			bitmask = str(input(G+"Enter the Bitmask (8-24-30): "))
 			net_addr = IP_ADDR + '/' +str(bitmask)
 			print(GR+"network address : %s"%net_addr)
